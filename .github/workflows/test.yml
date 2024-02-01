@@ -11,3 +11,8 @@ jobs:
         with:
           node-version: 20
       - uses: ./
+        with:
+          owner: NilsJacobsen
+          repo: nilsjacobsen-action
+          pr_number: ${{ github.event.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
